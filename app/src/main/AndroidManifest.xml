@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
+        android:name=".utils.ShareApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,6 +23,7 @@
         </activity>
         <activity android:name=".FacebookShareActivity"/>
         <activity android:name=".MessengerShareActivity"/>
+        <activity android:name=".InstagramShareActivity"/>
 
         <provider android:authorities="com.facebook.app.FacebookContentProvider406056529831577"
             android:name="com.facebook.FacebookContentProvider"

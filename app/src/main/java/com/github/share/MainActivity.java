@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btnFacebook;
     private Button btnMessenger;
+    private Button btnInstagram;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnFacebook = findViewById(R.id.facebook);
         btnMessenger = findViewById(R.id.messenger);
+        btnInstagram = findViewById(R.id.instagram);
 
         btnFacebook.setOnClickListener(this);
         btnMessenger.setOnClickListener(this);
+        btnInstagram.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view == btnMessenger) {
             Toast.makeText(MainActivity.this, "由于国内无法安装messenger，并未测试通过...", Toast.LENGTH_SHORT).show();
 //            startActivity(new Intent(this, MessengerShareActivity.class));
+        } else if (view == btnInstagram) {
+            startActivity(new Intent(this, InstagramShareActivity.class));
         }
     }
 
