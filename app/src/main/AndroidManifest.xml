@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FacebookShareActivity"/>
+        <activity android:name=".MessengerShareActivity"/>
 
         <provider android:authorities="com.facebook.app.FacebookContentProvider406056529831577"
             android:name="com.facebook.FacebookContentProvider"
