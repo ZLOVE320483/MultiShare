@@ -24,4 +24,10 @@
         android:layout_height="50dp"
         android:text="instagram"/>
 
+    <Button
+        android:id="@+id/whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="whatsapp"/>
+
 </LinearLayout>

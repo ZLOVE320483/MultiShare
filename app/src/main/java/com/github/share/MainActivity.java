@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnFacebook;
     private Button btnMessenger;
     private Button btnInstagram;
+    private Button btnWhatsApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnFacebook = findViewById(R.id.facebook);
         btnMessenger = findViewById(R.id.messenger);
         btnInstagram = findViewById(R.id.instagram);
+        btnWhatsApp = findViewById(R.id.whatsapp);
 
         btnFacebook.setOnClickListener(this);
         btnMessenger.setOnClickListener(this);
         btnInstagram.setOnClickListener(this);
+        btnWhatsApp.setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            startActivity(new Intent(this, MessengerShareActivity.class));
         } else if (view == btnInstagram) {
             startActivity(new Intent(this, InstagramShareActivity.class));
+        } else if (view == btnWhatsApp) {
+            startActivity(new Intent(this, WhatsAppShareActivity.class));
         }
     }
 
