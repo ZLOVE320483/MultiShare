@@ -30,4 +30,10 @@
         android:layout_height="50dp"
         android:text="whatsapp"/>
 
+    <Button
+        android:id="@+id/twitter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="twitter"/>
+
 </LinearLayout>

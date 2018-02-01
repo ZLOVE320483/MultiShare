@@ -25,6 +25,7 @@
         <activity android:name=".MessengerShareActivity"/>
         <activity android:name=".InstagramShareActivity"/>
         <activity android:name=".WhatsAppShareActivity"/>
+        <activity android:name=".TwitterShareActivity"/>
 
         <provider android:authorities="com.facebook.app.FacebookContentProvider406056529831577"
             android:name="com.facebook.FacebookContentProvider"
